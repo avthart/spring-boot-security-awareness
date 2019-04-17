@@ -1,0 +1,4 @@
+app:
+  security:
+    userPassword: userpwd
+    adminPassword: adminpwd

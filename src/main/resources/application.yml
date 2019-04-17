@@ -1,0 +1,19 @@
+spring:
+  jackson.serialization.write_dates_as_timestamps: false
+
+# do not enable h2 console for production, for testing only
+spring.h2.console.enabled: false
+
+# turn off secure and http-only flag, for testing only
+server.session.cookie:
+  http-only: false
+  secure: false
+
+# handle reverse proxy headers
+server.use-forward-headers: true
+
+app.security.adminPassword: verysecretpassword
+
+logging:
+  level:
+    org.springframework.security: INFO
