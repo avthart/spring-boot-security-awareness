@@ -21,7 +21,7 @@ public class AdminController {
     @Secured("ROLE_ADMIN")
     @Transactional
     public void modifyBsn (@PathVariable String id, @RequestBody UpdateBsnRequest request) {
-        Query query = entityManager.createQuery("UPDATE patient SET bsn = '" + request.getBsn() + "' WHERE id = " + id);
+        Query query = entityManager.createNativeQuery("UPDATE patient SET bsn = '" + request.getBsn() + "' WHERE id = " + id);
         query.executeUpdate();
     }
 
