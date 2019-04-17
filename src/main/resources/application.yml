@@ -12,8 +12,6 @@ server.session.cookie:
 # handle reverse proxy headers
 server.use-forward-headers: true
 
-app.security.adminPassword: verysecretpassword
-
 logging:
   level:
     org.springframework.security: INFO
