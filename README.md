@@ -4,6 +4,11 @@ This sample project contains several potential security issues. This sample proj
 
 > Do not run this app in production.
 
+## Prerequisites
+
+* Java
+* Apache Maven
+
 ## Build
 
     mvn verify
