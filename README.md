@@ -6,7 +6,7 @@ This sample project contains several potential security issues. This sample proj
 
 ## Prerequisites
 
-* Java
+* Java 8
 * Apache Maven
 
 ## Build
